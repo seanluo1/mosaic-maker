@@ -1,0 +1,6 @@
+convert all files to png: mogrify -format png *.*
+
+scale all images in a directory to 200px width (keeps ratio): convert '*.jpg[200x]' resized%03d.png
+
+make a mosaic: ./mp5 ../../Downloads/mosaic_images/base/background.png /Downloads/mosaic_images/resized_images 75 25 myMosaic.png
+
